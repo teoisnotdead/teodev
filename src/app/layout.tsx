@@ -1,13 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat } from 'next/font/google'
 import "./globals.css";
-import ClientThemeProvider from "./components/ClientThemeProvider";
-
-const montserrat = Montserrat({
-  weight: ['400', '500', '600', '700'],
-  subsets: ['latin'],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "TEODEV",
@@ -20,14 +12,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" suppressHydrationWarning>
-      <body
-        className={`${montserrat.className} antialiased flex flex-col bg-white dark:bg-black`}>
-        <div className="w-10/12 md:w-11/12 xl:w-3/4 mx-auto">
-          <ClientThemeProvider>
-            {children}
-          </ClientThemeProvider>
-        </div>
+    <html lang="es" className="dark">
+      <body className="font-montserrat antialiased flex flex-col bg-black">
+        <div className="w-10/12 md:w-11/12 xl:w-3/4 mx-auto">{children}</div>
       </body>
     </html>
   );
