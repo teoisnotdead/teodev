@@ -1,5 +1,23 @@
 import type { Metadata } from "next";
+import localFont from 'next/font/local';
 import "./globals.css";
+
+export const montserrat = localFont({
+  src: [
+    {
+      path: './fonts/Montserrat-VariableFont_wght.ttf',
+      weight: '100 900',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Montserrat-Italic-VariableFont_wght.ttf',
+      weight: '100 900',
+      style: 'italic',
+    }
+  ],
+  variable: '--font-montserrat',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: "TEODEV",
@@ -13,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className="dark">
-      <body className="font-montserrat antialiased flex flex-col bg-black">
+      <body className={`${montserrat.className} antialiased flex flex-col bg-black`}>
         <div className="w-10/12 md:w-11/12 xl:w-3/4 mx-auto">{children}</div>
       </body>
     </html>
