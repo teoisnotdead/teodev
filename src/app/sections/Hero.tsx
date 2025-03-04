@@ -19,7 +19,7 @@ export const Hero = () => {
         </div>
         <Image
           className='rounded-full w-96 h-96 object-cover items-center drop-shadow-light'
-          src='/images/io3.jpeg'
+          src='/images/me.webp'
           alt='Alfredo Saavedra'
           width={300}
           height={300}

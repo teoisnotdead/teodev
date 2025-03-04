@@ -1,18 +1,22 @@
+import { PROJECTS } from "../data/projects";
 import { ProjectCard } from "../components/ProjectCard";
 
 export const Projects = () => {
   return (
     <div className="flex flex-col items-center mt-24 font-bold mx-auto w-full">
-      <h1 className="uppercase text-5xl mb-8 leading-none">Proyectos</h1>
+      <h2 className="uppercase text-5xl mb-8 leading-none">Proyectos</h2>
 
-      <ProjectCard
-        title="BeyondGame"
-        description="Tu portal de torneos y noticias de juegos."
-        tags={["React"]}
-        image="/images/projects/beyondgame.png"
-        githubLink="https://github.com/teoisnotdead/beyondgame"
-        demoLink="https://beyondgame.com"
-      />
+      {PROJECTS.map((project) => (
+          <ProjectCard
+            key={project.title}
+            title={project.title}
+            description={project.description}
+            tags={project.tags}
+            image={project.image}
+            githubLink={project.githubLink}
+            demoLink={project.demoLink}
+          />
+        ))}
     </div>
   );
 };

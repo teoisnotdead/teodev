@@ -12,9 +12,9 @@ interface ProjectCardProps {
 
 export const ProjectCard = ({ title, description, tags, image, githubLink, demoLink }: ProjectCardProps) => {
   return (
-    <div className="w-full flex justify-between bg-project-card/40 rounded-md hover:border-white/60 border border-transparent transition-colors duration-300">
+    <div className="w-full mb-5 flex justify-between bg-project-card/40 rounded-md hover:border-white/40 border border-transparent transition-colors duration-300">
       <Image
-        className="rounded-bl-lg rounded-tl-md object-cover w-4/12"
+        className="rounded-bl-lg rounded-tl-md object-fit w-4/12"
         src={image}
         alt={title}
         width={484}
