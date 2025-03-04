@@ -17,4 +17,6 @@ export const TECHNOLOGIES = [
   { name: "Express", icon: "/images/technologies/express.png" },
   { name: "MongoDB", icon: "/images/technologies/mongodb.png" },
   { name: "PostgreSQL", icon: "/images/technologies/postgresql.png" },
+  { name: "Deno", icon: "/images/technologies/deno.png" },
+  { name: "Shadcn", icon: "/images/technologies/shadcn.png" },
 ];

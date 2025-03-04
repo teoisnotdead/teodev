@@ -12,7 +12,7 @@ interface ProjectCardProps {
 
 export const ProjectCard = ({ title, description, tags, image, githubLink, demoLink }: ProjectCardProps) => {
   return (
-    <div className="w-full mb-5 flex justify-between bg-project-card/40 rounded-md hover:border-white/40 border border-transparent transition-colors duration-300">
+    <div className="w-full mb-5 flex justify-between bg-project-card/40 rounded-md hover:border-white/60 border border-transparent transition-colors duration-300">
       <Image
         className="rounded-bl-lg rounded-tl-md object-fit w-4/12"
         src={image}
@@ -20,16 +20,15 @@ export const ProjectCard = ({ title, description, tags, image, githubLink, demoL
         width={484}
         height={387}
       />
-      <div className="p-16 w-8/12">
-        {/* Mapeo dinámico de tags */}
-        <div className="flex flex-wrap gap-2">
+      <div className="p-12 w-8/12">
+        <div>
+          <h2 className="text-3xl font-bold text-primary">{title}</h2>
+          <p className="text-xl font-bold">{description}</p>
+        </div>
+        <div className="flex flex-wrap gap-2 mt-6">
           {tags.map((tag, index) => (
             <Tags key={index} iconSrc={`/images/technologies/${tag.toLowerCase()}.png`} tagName={tag} />
           ))}
-        </div>
-        <div className="mt-6">
-          <h2 className="text-3xl font-bold text-primary">{title}</h2>
-          <p className="text-xl font-bold">{description}</p>
         </div>
         <div className="flex flex-wrap mt-14">
           <a href={demoLink} target="_blank" rel="noopener noreferrer">

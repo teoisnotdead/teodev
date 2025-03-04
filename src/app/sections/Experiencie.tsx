@@ -10,10 +10,10 @@ export const Experience = () => {
         {EXPERIENCES.map((exp, index) => (
           <div
             key={index}
-            className="flex p-6 rounded-lg border border-transparent hover:border-white/40 transition-colors"
+            className="flex justify-between p-6 rounded-lg border border-transparent hover:border-white/40 transition-colors"
           >
-            <span className="w-1/3 text-xl font-semibold">{exp.date}</span>
-            <div className="flex flex-col">
+            <span className="text-xl font-semibold">{exp.date}</span>
+            <div className="w-2/3 flex flex-col">
               <div className="flex items-center justify-end">
                 <h2 className="text-2xl font-bold text-primary">{exp.position} - {exp.company}</h2>
               </div>
