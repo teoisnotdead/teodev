@@ -1,8 +1,10 @@
+const WHATSAPP_MESSAGE = 'Hola Alfredo!, me gustaría saber más sobre...';
+
 export const SOCIALS = [
   {
     name: 'WhatsApp',
     icon: '/images/technologies/whatsapp.png',
-    link: 'https://wa.me/+56962163466',
+    link: `https://wa.me/+56962163466?text=${WHATSAPP_MESSAGE}`,
   },
   {
     name: 'LinkedIn',
