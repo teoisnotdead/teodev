@@ -2,7 +2,7 @@ export const EXPERIENCES = [
   {
     position: 'Software Engineer',
     company: 'Kubos',
-    date: 'SEP 2019 - ACTUALIDAD',
+    date: 'SEP 2019 - FEB 2025',
     description:
       'Lorem ipsum dolor sit amet consectetur adipiscing elit eget viverra, lobortis dapibus felis hac suspendisse vitae pellentesque commodo molestie tristique.',
     technologies: [
