@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import { Button } from '../components/Button';
-import { Socials } from '../components/Socials';
+import { Button, Socials } from '../components';
 
 export const Hero = () => {
   return (

@@ -1,4 +1,4 @@
-import { SOCIALS } from '../data/socials';
+import { SOCIALS } from '../data';
 import type { SocialsProps } from '../types';
 
 export const Socials = ({ socials = SOCIALS }: SocialsProps) => {

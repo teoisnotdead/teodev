@@ -1,6 +1,5 @@
-import { TECHNOLOGIES } from "../data/technologies";
-import { EXPERIENCES } from "../data/experience";
-import { Tags } from "../components/Tags";
+import { TECHNOLOGIES, EXPERIENCES } from "../data";
+import { Tags } from "../components";
 
 export const Experience = () => {
   return (

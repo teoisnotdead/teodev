@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Socials } from '../components/Socials';
+import { Socials } from '../components';
 
 export const Footer = () => {
   return (

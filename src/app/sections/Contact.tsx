@@ -2,9 +2,8 @@
 
 import { useState } from "react";
 import { toast } from "sonner";
-import { Button } from "../components/Button";
-import { FormFields } from "../components/FormFields";
-import { fields } from "../data/contac-form";
+import { Button, FormFields } from "../components";
+import { fields } from "../data";
 
 export const Contact = () => {
   const [formData, setFormData] = useState<Record<string, string>>({

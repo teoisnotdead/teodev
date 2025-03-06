@@ -26,7 +26,7 @@ export interface SocialProps {
 }
 
 export interface SocialsProps {
-  socials: SocialProps[];
+  socials?: SocialProps[];
 }
 
 export interface ButtonProps {

@@ -1,9 +1,5 @@
-import { Hero } from "./sections/Hero";
-import { NavBar } from "./components/NavBar/NavBar";
-import { Projects } from "./sections/Projects";
-import { Experience } from "./sections/Experiencie";
-import { Contact } from "./sections/Contact";
-import { Footer } from "./sections/Footer";
+import { NavBar } from "./components";
+import { Hero, Projects, Experience, Contact, Footer } from "./sections";
 
 export default function Home() {
   return (
