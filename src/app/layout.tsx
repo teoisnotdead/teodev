@@ -21,8 +21,40 @@ export const montserrat = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "TEODEV",
+  title: "TEODEV | Desarrollo Web",
   description: "Soluciones web de alta calidad, impulsadas por innovación y compromiso.",
+  keywords: ["Desarrollo Web", "Fullstack Developer", "Next.js", "React", "Soluciones Web"],
+  authors: [{ name: "Alfredo Saavedra", url: "https://teodev.cl" }],
+  creator: "Alfredo Saavedra",
+  publisher: "TEODEV",
+  metadataBase: new URL("https://teodev.cl"),
+  alternates: {
+    canonical: "https://teodev.cl",
+  },
+  openGraph: {
+    title: "TEODEV | Desarrollo Web",
+    description: "Soluciones web de alta calidad, impulsadas por innovación y compromiso.",
+    url: "https://teodev.cl",
+    siteName: "TEODEV",
+    images: [
+      {
+        url: "/images/seo/banner.png",
+        width: 1200,
+        height: 630,
+        alt: "TEODEV - Desarrollo Web",
+      },
+    ],
+    locale: "es_CL",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "TEODEV | Desarrollo Web",
+    description: "Soluciones web de alta calidad, impulsadas por innovación y compromiso.",
+    images: ["/images/seo/banner.png"],
+    site: "@teoisnotdead",
+    creator: "@teoisnotdead",
+  },
 };
 
 export default function RootLayout({
@@ -32,7 +64,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className="dark">
-      <body className={`${montserrat.className} antialiased flex flex-col bg-black`}>
+      <meta name="theme-color" content="#f19f00" />
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+      <link rel="manifest" href="/manifest.json" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png" />
+      <body className={`${montserrat.className} antialiased flex flex-col`}>
         <Toaster
           theme="dark"
           position="top-center"
