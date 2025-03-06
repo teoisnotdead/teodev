@@ -1,19 +1,20 @@
 import { SOCIALS } from '../data/socials';
+import type { SocialsProps } from '../types';
 
-export const Socials = () => {
+export const Socials = ({ socials = SOCIALS }: SocialsProps) => {
   return (
     <div className="flex space-x-6">
-      {SOCIALS.map((social) => (
+      {socials.map(({ name, icon, link }) => (
         <a
-          key={social.name}
-          href={social.link}
+          key={name}
+          href={link}
           target="_blank"
           rel="noopener noreferrer"
           className="transition duration-300"
         >
           <img
-            src={social.icon}
-            alt={social.name}
+            src={icon}
+            alt={name}
             className="w-8 h-8 hover:scale-110 transition duration-300"
           />
         </a>

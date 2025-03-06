@@ -1,9 +1,5 @@
 import Image from "next/image";
-
-interface TagsProps {
-  iconSrc: string;
-  tagName: string;
-}
+import type { TagsProps } from '../types';
 
 export const Tags = ({ iconSrc, tagName }: TagsProps) => {
   return (

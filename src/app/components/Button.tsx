@@ -1,8 +1,4 @@
-interface ButtonProps {
-  children: React.ReactNode;
-  onClick?: () => void;
-  type?: "submit" | "reset" | "button";
-}
+import type { ButtonProps } from '../types';
 
 export const Button = ({ children, onClick }: ButtonProps) => {
   return (

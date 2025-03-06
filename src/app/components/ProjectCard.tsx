@@ -1,14 +1,6 @@
 import Image from "next/image";
 import { Tags } from "./Tags";
-
-interface ProjectCardProps {
-  title: string;
-  description: string;
-  tags: string[];
-  image: string;
-  githubLink: string;
-  demoLink: string;
-}
+import type { ProjectCardProps } from '../types';
 
 export const ProjectCard = ({ title, description, tags, image, githubLink, demoLink }: ProjectCardProps) => {
   return (

@@ -1,4 +1,4 @@
-import type { FormField, FormFieldsProps } from "../types/formFields";
+import type { FormField, FormFieldsProps } from '../types';
 
 export const FormFields: React.FC<FormFieldsProps> = ({ fields, formData, handleChange }) => {
   return (
