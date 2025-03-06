@@ -13,7 +13,7 @@ export const EXPERIENCES = [
       'JavaScript',
       'Jira',
       'Jest',
-      'Jasmin',
+      'Jasmine',
       'Git',
       'Bitbucket',
       'Github',
