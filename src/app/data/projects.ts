@@ -1,24 +1,7 @@
 export const PROJECTS = [
   {
-    title: 'BeyondGame',
-    description: 'Tu portal de torneos y noticias de juegos.',
-    tags: [
-      'HTML5',
-      'CSS3',
-      'React',
-      'TypeScript',
-      'Jest',
-      'Git',
-      'Github',
-    ],
-    image: '/images/projects/beyondgame.webp',
-    githubLink: 'https://github.com/teoisnotdead/beyondgame',
-    demoLink: 'https://beyondgame.com',
-  },
-  {
     title: 'Cambia tu aceite',
-    description:
-      'Una plataforma agendar y gestionar citas a domicilio.',
+    description: 'Una plataforma agendar y gestionar citas a domicilio.',
     tags: [
       'HTML5',
       'CSS3',
@@ -30,8 +13,8 @@ export const PROJECTS = [
       'GitHub',
     ],
     image: '/images/projects/cambiatuaceite.webp',
-    githubLink: 'https://github.com/teoisnotdead/devtracker',
-    demoLink: 'https://devtracker.com',
+    githubLink: 'https://github.com/teoisnotdead/cars-schedule-web',
+    demoLink: 'https://cambiatuaceite.cl/',
   },
   {
     title: 'TCG Market',
@@ -50,7 +33,15 @@ export const PROJECTS = [
       'GitHub',
     ],
     image: '/images/projects/tcgmarket.webp',
-    githubLink: 'https://github.com/teoisnotdead/foodiefind',
-    demoLink: 'https://foodiefind.com',
+    githubLink: 'https://github.com/teoisnotdead/tcg-market-api',
+    demoLink: 'https://tcg-market.onrender.com/',
+  },
+  {
+    title: 'BeyondGame',
+    description: 'Tu portal de torneos y noticias de juegos.',
+    tags: ['HTML5', 'CSS3', 'React', 'TypeScript', 'Jest', 'Git', 'Github'],
+    image: '/images/projects/beyondgame.webp',
+    githubLink: 'https://github.com/teoisnotdead/beyond-game-league',
+    demoLink: '#',
   },
 ]

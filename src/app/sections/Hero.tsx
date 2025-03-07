@@ -1,10 +1,19 @@
+'use client'
+
 import Image from 'next/image';
 import { Button, Socials } from '../components';
 
 export const Hero = () => {
+  const handleScrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
-      <div className='flex items-center mt-24 font-bold mx-auto justify-between mb-2'>
+      <div id='hero' className='flex items-center mt-24 font-bold mx-auto justify-between mb-2'>
         <div className='w-2/3 leading-none pr-20'>
           <h1 className='uppercase text-[55px]'>Alfredo Saavedra</h1>
           <h2 className='uppercase text-primary text-[36px]'>Fullstack Developer</h2>
@@ -27,7 +36,7 @@ export const Hero = () => {
           priority
         />
       </div>
-      <Button>Hablemos</Button>
+      <Button onClick={handleScrollToContact}>Hablemos</Button>
     </>
   );
 };

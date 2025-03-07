@@ -3,7 +3,7 @@ import { Tags } from "../components";
 
 export const Experience = () => {
   return (
-    <section className="w-full mx-auto mt-24 mb-5">
+    <section id="experience" className="w-full mx-auto mt-24 mb-5">
       <h2 className="uppercase text-5xl mb-12 font-bold text-center">Experiencia</h2>
       <div className="space-y-8">
         {EXPERIENCES.map((exp, index) => (

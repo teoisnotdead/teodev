@@ -1,3 +1,4 @@
+export { menuItem } from './menu-item'
 export { fields } from './contact-form'
 export { EXPERIENCES } from './experience'
 export { PROJECTS } from './projects'

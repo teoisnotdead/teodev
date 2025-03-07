@@ -49,7 +49,7 @@ export const Contact = () => {
   };
 
   return (
-    <section className="w-full max-w-3xl mx-auto mt-24 px-6">
+    <section id="contact" className="w-full max-w-3xl mx-auto mt-24 px-6">
       <h1 className="text-center text-4xl font-bold mb-8 text-white">Contacto</h1>
       <form onSubmit={handleSubmit} className="flex flex-col space-y-6">
         <FormFields fields={fields} formData={formData} handleChange={handleChange} />

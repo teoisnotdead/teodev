@@ -3,7 +3,7 @@ import { ProjectCard } from "../components";
 
 export const Projects = () => {
   return (
-    <div className="flex flex-col items-center mt-24 font-bold mx-auto w-full">
+    <div id="projects" className="flex flex-col items-center mt-24 font-bold mx-auto w-full">
       <h2 className="uppercase text-5xl mb-8 leading-none">Proyectos</h2>
 
       {PROJECTS.map((project) => (
