@@ -4,7 +4,7 @@ import type { ProjectCardProps } from "../types";
 
 export const ProjectCard = ({ title, description, tags, image, githubLink, demoLink }: ProjectCardProps) => {
   return (
-    <div className="w-full flex flex-col md:flex-row md:mb-5 bg-project-card/40 rounded-md border border-transparent hover:border-white/60 transition-colors duration-300 overflow-hidden">
+    <div className="w-full flex flex-col md:flex-row mb-5 bg-project-card/40 rounded-md border md:border-transparent hover:border-white/60 transition-colors duration-300 overflow-hidden">
       <Image
         className="object-cover w-full md:w-5/12"
         src={image}
