@@ -17,7 +17,6 @@ export const Hero = () => {
         id="hero"
         className="flex flex-col md:flex-row items-center mt-24 font-bold mx-auto justify-between mb-2 text-center md:text-left"
       >
-        {/* Texto */}
         <div className="w-full md:w-2/3 leading-none md:pr-20 px-6 md:px-0">
           <h1 className="uppercase text-[40px] md:text-[55px]">Alfredo Saavedra</h1>
           <h2 className="uppercase text-primary text-[28px] md:text-[36px]">
@@ -36,7 +35,6 @@ export const Hero = () => {
           </div>
         </div>
 
-        {/* Imagen */}
         <div className="w-full md:w-auto flex justify-center">
           <Image
             className="rounded-full w-56 h-56 md:w-96 md:h-96 object-cover drop-shadow-light"
@@ -49,7 +47,6 @@ export const Hero = () => {
         </div>
       </section>
 
-      {/* Botón */}
       <div className="flex justify-center md:justify-start mt-6">
         <Button onClick={handleScrollToContact}>Hablemos</Button>
       </div>
