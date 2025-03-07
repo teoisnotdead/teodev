@@ -3,7 +3,7 @@ import localFont from 'next/font/local';
 import "./globals.css";
 import { Toaster } from "sonner";
 
-export const montserrat = localFont({
+const montserrat = localFont({
   src: [
     {
       path: './fonts/Montserrat-VariableFont_wght.ttf',
