@@ -70,11 +70,11 @@ export default function RootLayout({
       <link rel="manifest" href="/manifest.json" />
       <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png" />
       <body className={`${montserrat.className} antialiased flex flex-col`}>
-        <Toaster
-          theme="dark"
-          position="top-center"
-        />
-        <div className="w-10/12 md:w-11/12 xl:w-3/4 mx-auto">{children}</div>
+        <Toaster theme="dark" position="top-center" />
+
+        <div className="w-full max-w-[1280px] mx-auto px-4 md:px-8">
+          {children}
+        </div>
       </body>
     </html>
   );

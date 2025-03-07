@@ -7,9 +7,6 @@ export default function Home() {
       <NavBar />
       <Hero />
       <Projects />
-      <Experience />
-      <Contact />
-      <Footer />
     </div>
   );
 }
