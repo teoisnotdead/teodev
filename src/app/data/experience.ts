@@ -1,10 +1,14 @@
 export const EXPERIENCES = [
   {
-    position: 'Software Engineer',
+    position: 'Frontend Developer',
     company: 'Kubos',
     date: 'SEP 2019 - FEB 2025',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipiscing elit eget viverra, lobortis dapibus felis hac suspendisse vitae pellentesque commodo molestie tristique.',
+    description: [
+      'Diseño y desarrollo de interfaces intuitivas y responsivas con Angular y TypeScript para proyectos bancarios como Banco BCI y Banco de Chile.',
+      'Integración de servicios RESTful para sincronización de datos en tiempo real y configuración de autenticación con Azure y JWT.',
+      'Implementación de pruebas unitarias con Jest y Jasmine para garantizar calidad y estabilidad del código. Desarrollo de aplicaciones específicas como gestión de cuadraturas contables, sistema de notificaciones y plataformas de incentivos para clientes inversionistas.',
+      'Mejoras en seguridad y experiencia de usuario, optimizando flujos de trabajo y procesos críticos para clientes del sector financiero.',
+    ],
     technologies: [
       'Angular',
       'React',
@@ -23,8 +27,9 @@ export const EXPERIENCES = [
     position: 'Fullstack Developer',
     company: 'Freelance',
     date: 'MAR 2022 - ACTUALIDAD',
-    description:
-      'Desarrollo de soluciones web escalables y eficientes utilizando tecnologías modernas, asegurando alto rendimiento y experiencia de usuario óptima.',
+    description: [
+      'Diseño y desarrollo de aplicaciones escalables con React en el frontend y Node.js/Deno en el backend. Creación de gestores de citas y torneos con notificaciones en tiempo real. Implementación de arquitectura RESTful, despliegues en Netlify, Railway, Render y GCP.',
+    ],
     technologies: [
       'HTML5',
       'CSS3',
@@ -46,11 +51,12 @@ export const EXPERIENCES = [
     ],
   },
   {
-    position: 'UI Designer',
+    position: 'UI Designer y Web Designer',
     company: 'Kubos',
     date: 'NOV 2015 - MAR 2018',
-    description:
-      'Diseño y desarrollo de interfaces modernas centradas en la experiencia de usuario con enfoque en accesibilidad y performance.',
+    description: [
+      'Diseño y maquetación de interfaces intuitivas y accesibles. Rediseño de múltiples proyectos con enfoque en usabilidad y rendimiento. Colaboración con equipos de backend para integrar soluciones frontend eficientes con Angular.',
+    ],
     technologies: [
       'Angular',
       'Git',

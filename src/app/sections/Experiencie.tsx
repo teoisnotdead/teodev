@@ -19,7 +19,11 @@ export const Experience = () => {
               <div className="flex md:justify-end">
                 <h2 className="text-2xl font-bold text-primary">{exp.position} - {exp.company}</h2>
               </div>
-              <p className="mt-4 text-sm md:text-base text-justify">{exp.description}</p>
+              {
+                exp.description.map((desc, idx) => (
+                  <p key={idx} className="mt-4 text-sm md:text-base text-justify">{desc}</p>
+                ))
+              }
 
               <div className="flex flex-wrap mt-4 gap-3">
                 {exp.technologies.map((tech) => {
