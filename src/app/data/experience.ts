@@ -15,6 +15,7 @@ export const EXPERIENCES = [
       'HTML5',
       'CSS3',
       'JavaScript',
+      'TypeScript',
       'Jira',
       'Jest',
       'Jasmine',
