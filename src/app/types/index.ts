@@ -42,7 +42,7 @@ export interface TagsProps {
 
 export interface ProjectCardProps {
   title: string;
-  description: string[];
+  description: string;
   tags: string[];
   image: string;
   githubLink: string;

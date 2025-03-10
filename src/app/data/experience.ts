@@ -51,7 +51,7 @@ export const EXPERIENCES = [
     ],
   },
   {
-    position: 'UI Designer y Web Designer',
+    position: 'UI Designer & Web Layout Developer',
     company: 'Kubos',
     date: 'NOV 2015 - MAR 2018',
     description: [
